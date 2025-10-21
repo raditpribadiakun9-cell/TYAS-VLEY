@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TYASVCY 3D RPG Multiplayer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>TYASVCY 3D RPG Multiplayer</h1>
+
+<div id="game-area"><canvas id="gameCanvas"></canvas></div>
+
+<div id="uiContainer">
+  <div>HP: <progress id="hpBar" value="100" max="100"></progress></div>
+  <div>XP: <progress id="xpBar" value="0" max="100"></progress></div>
+  <div>Level: <span id="level">1</span></div>
+  <div>Inventory: <span id="inventory"></span></div>
+</div>
+
+<div id="joystick-base">
+  <div id="joystick-thumb"></div>
+</div>
+
+<div id="skillContainer">
+  <button class="skillBtn" data-skill="1">Skill1</button>
+  <button class="skillBtn" data-skill="2">Skill2</button>
+  <button class="skillBtn" data-skill="3">Skill3</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
