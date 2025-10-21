@@ -1,0 +1,9 @@
+body { margin:0; font-family:Arial; text-align:center; background:#f0f0f0;}
+#game-area { width:100%; height:80vh; background:#cfe; }
+canvas { width:100%; height:100%; display:block; }
+
+#uiContainer { position:fixed; top:10px; left:10px; background:rgba(255,255,255,0.7); padding:10px; border-radius:5px; }
+#joystick-base { position:fixed; bottom:20px; left:20px; width:100px; height:100px; background:rgba(0,0,0,0.3); border-radius:50%; }
+#joystick-thumb { width:50px; height:50px; background:rgba(0,0,0,0.5); border-radius:50%; position:absolute; left:25px; top:25px; }
+#skillContainer { position:fixed; bottom:20px; right:20px; }
+.skillBtn { width:60px; height:60px; margin:5px; }
